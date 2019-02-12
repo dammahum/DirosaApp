@@ -1,0 +1,17 @@
+[
+  {
+    "id" : 1,
+    "title" : "Izhar",
+    "content" : "Izhar artinya jelas atau terang. Apabila ada nun mati atau tanwin (ـًـٍـٌ / نْ)bertemu dengan salah satu huruf halqi (ا ح خ ع غ ه ), maka dibacanya jelas/terang."
+  },
+  {
+    "id" : 2,
+    "title" : "Idgham Bighunnah",
+    "content" : "Idgham Bighunnah (dilebur dengan disertai dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya dengan disertai (ber)dengung, jika bertemu dengan salah satu huruf yang empat, yaitu: ن م و ي"
+  },
+  {
+    "id" : 3,
+    "title" : "Idgham Bilaghunnah",
+    "content" : "Idgham Bilaghunnah (dilebur tanpa dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya tanpa disertai dengung, jika bertemu dengan huruf lam atau ra (ر، ل)"
+  }
+]

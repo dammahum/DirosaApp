@@ -1,0 +1,82 @@
+[
+    {
+        "id" : 1,
+        "theme": "Huruf A-Kho"
+    },
+    {
+        "id" : 2,
+        "theme": "Huruf Dal-Shod"
+    },
+    {
+        "id" : 3,
+        "theme": "Tho'-Khaf"
+    },
+    {
+        "id" : 4,
+        "theme": "Lam-Ya"
+    },
+    {
+        "id" : 5,
+        "theme": "Huruf Hijaiyyah Asli"
+    },
+    {
+        "id" : 6,
+        "theme": "Bacaan A I U - Sa Si Su"
+    },
+    {
+        "id" : 7,
+        "theme": "Bacaan Sya Syi Syu - Ma Mi Mu"
+    },
+    {
+        "id" : 8,
+        "theme": "Bacaan Na Ni Nu - Ya Yi Yu"
+    },
+    {
+        "id" : 9,
+        "theme": "Tanwin"
+    },
+    {
+        "id" : 10,
+        "theme": "Bacaan Mad Thobi'i dan mad wajib"
+    },
+    {
+        "id" : 11,
+        "theme": "Bacaan Mad badal"
+    },
+    {
+        "id" : 12,
+        "theme": "Tasydid"
+    },
+    {
+        "id" : 13,
+        "theme": "Sukun"
+    },
+    {
+        "id" : 14,
+        "theme": "Bacaan 'Bayna' - 'Baunu' dan qolqolah"
+    },
+    {
+        "id" : 15,
+        "theme": "Bacaan Ta - Ta' - Takh - Taq"
+    },
+    {
+        "id" : 16,
+        "theme": "Lam Qomariyah, Lam Syamsiyah, dan Ghunnah"
+    },
+    {
+        "id" : 17,
+        "theme": "Cara mewaqofkan dan Bacaan Idhgom"
+    },
+    {
+        "id" : 18,
+        "theme": "Bacaan Iqlab dan Idhgom Mimi/Syafawi"
+    },
+    {
+        "id" : 19,
+        "theme": "Bacaan Ikhfa' dan Idzhar"
+    },
+    {
+        "id" : 20,
+        "theme": "Huruf Awal Surah, Lam Jalalah dan bacaan Ghorib Musykilat"
+    }
+]

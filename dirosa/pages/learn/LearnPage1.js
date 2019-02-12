@@ -1,0 +1,581 @@
+import React, { Component } from 'react';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { Container, Header, Left, Body, Icon, Button, Title, } from 'native-base';
+import { ScrollView } from 'react-native-gesture-handler';
+
+export default class LearnPage1 extends Component {
+
+  render() {
+
+    let screenWidth = Dimensions.get('window').width;
+
+    const { goBack } = this.props.navigation;
+
+    return (
+      <Container>
+          <Header style={{ backgroundColor: '#1B5A07' }}>
+          <Left>
+            <Button
+              transparent
+              onPress={() => goBack()}
+            >
+              <Icon type='MaterialIcons' name='arrow-back'></Icon>
+            </Button>
+          </Left>
+          <Body>
+            <Title style={styles.titleHeader}>PERTEMUAN KE - 1</Title>
+          </Body>
+        </Header>
+
+        <ScrollView
+          horizontal = {true}
+          showsHorizontalScrollIndicator = {false}
+          showsVerticalScrollIndicator = {false}
+          pagingEnabled = {true}
+        >
+          <View style={{ flex: 1, width: screenWidth }}>
+            <View style={styles.column}>
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <Text style={styles.font}>خَ</Text>
+                  <Text style={styles.font}>حَ</Text>
+                  <Text style={styles.font}>جَ</Text>
+                  <Text style={styles.font}>ثَ</Text>
+                  <Text style={styles.font}>تَ</Text>
+                  <Text style={styles.font}>بَ</Text>
+                  <Text style={styles.font}>أَ</Text>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>١</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <Text style={styles.font}>جَ</Text>
+                    <Text style={styles.font}>حَ</Text>
+                    <Text style={styles.font}>بَ</Text>
+                    <Text style={styles.font}>خَ</Text>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <Text style={styles.font}>أَ</Text>
+                    <Text style={styles.font}>بَ</Text>
+                    <Text style={styles.font}>تَ</Text>
+                    <Text style={styles.font}>ثَ</Text>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>أَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٣</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٤</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                    <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٥</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٦</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>أَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٧</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.separator}></View>
+                  <View style={styles.row4}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                    </View>
+                  </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٨</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                <View style={styles.row7}>
+                  <Text style={styles.font}>خَ</Text>
+                  <Text style={styles.font}>حَ</Text>
+                  <Text style={styles.font}>جَ</Text>
+                  <Text style={styles.font}>ثَ</Text>
+                  <Text style={styles.font}>تَ</Text>
+                  <Text style={styles.font}>بَ</Text>
+                  <Text style={styles.font}>أَ</Text>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>٩</Text>
+                </View>
+              </View>
+
+            </View>
+          </View>
+          
+          <View style={{ flex: 1, width: screenWidth }}>
+            <View style={styles.column}>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَبَأَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>بَأَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                    <Text style={styles.font}>بَأَخَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَبَحَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَحَأَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَبَثَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَخَحَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَتَخَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>أَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَحَخَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَجَحَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَثَجَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَبَتَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَخَأَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>خَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بَحَأَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>أَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَثَجَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>تَحَجَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>تَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَجَحَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَ</Text>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>ثَبَجَ</Text>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>جَ</Text>
+                      <Text style={styles.font}>بَ</Text>
+                      <Text style={styles.font}>ثَ</Text>
+                    </View>          
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+            </View>
+          </View>
+          </ScrollView>
+      </Container>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  titleHeader: {
+    fontFamily: 'lato-black',
+  },
+  column: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+  row: {
+    flex: 1,
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderBottomColor: '#aaa',
+  },
+  row7: {
+    flex: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingHorizontal: 8,
+  },
+  row4: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  row2: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  row1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderLeftWidth: 2,
+    borderLeftColor: '#aaa',
+  },
+  font: {
+    fontSize: 39,
+    color: '#000',
+    marginTop: 7,
+  },
+  font2: {
+    fontSize: 26,
+    color: '#000',
+  },
+  separator: {
+    marginHorizontal: 7,
+    borderRightWidth: 0.5,
+    borderLeftWidth: 0.5,
+    borderLeftColor: '#aaa',
+    borderRightColor: '#aaa',
+  },
+});

@@ -1,0 +1,175 @@
+  // AN
+  <Text style={styles.font}>أٌ</Text>
+  <Text style={styles.font}>أٍ</Text>
+  <Text style={styles.font}>أً</Text>
+
+  // BAN
+
+  <Text style={styles.font}>بٌ</Text>
+  <Text style={styles.font}>بٍ</Text>
+  <Text style={styles.font}>بً</Text>
+
+  // TAN
+  
+  <Text style={styles.font}>تٌ</Text>
+  <Text style={styles.font}>تٍ</Text>
+  <Text style={styles.font}>تً</Text>
+
+  // TSAN
+
+  <Text style={styles.font}>ثٌ</Text>
+  <Text style={styles.font}>ثٍ</Text>
+  <Text style={styles.font}>ثً</Text>
+
+  // JAN
+
+  <Text style={styles.font}>جٌ</Text>
+  <Text style={styles.font}>جٍ</Text>
+  <Text style={styles.font}>جً</Text>
+
+  // HAN
+
+  <Text style={styles.font}>حٌ</Text>
+  <Text style={styles.font}>حٍ</Text>
+  <Text style={styles.font}>حً</Text>
+  
+  // KHON
+
+  <Text style={styles.font}>خٌ</Text>
+  <Text style={styles.font}>خٍ</Text>
+  <Text style={styles.font}>خً</Text>
+
+  // DAN
+
+  <Text style={styles.font}>دٌ</Text>
+  <Text style={styles.font}>دٍ</Text>
+  <Text style={styles.font}>دً</Text>
+
+  // DZAN
+
+  <Text style={styles.font}>ذٌ</Text>
+  <Text style={styles.font}>ذٍ</Text>
+  <Text style={styles.font}>ذً</Text>
+
+  // RO
+
+  <Text style={styles.font}>رٌ</Text>
+  <Text style={styles.font}>رٍ</Text>
+  <Text style={styles.font}>رً</Text>
+
+  // ZAN
+
+  <Text style={styles.font}>زٌ</Text>
+  <Text style={styles.font}>زٍ</Text>
+  <Text style={styles.font}>زً</Text>
+
+  // SAN
+
+  <Text style={styles.font}>سٌ</Text>
+  <Text style={styles.font}>سٍ</Text>
+  <Text style={styles.font}>سً</Text>
+
+  // SYAN
+
+  <Text style={styles.font}>شٌ</Text>
+  <Text style={styles.font}>شٍ</Text>
+  <Text style={styles.font}>شً</Text>
+
+  // SON
+
+  <Text style={styles.font}>صٌ</Text>
+  <Text style={styles.font}>صٍ</Text>
+  <Text style={styles.font}>صً</Text>
+
+  // DON
+
+  <Text style={styles.font}>ضٌ</Text>
+  <Text style={styles.font}>ضٍ</Text>
+  <Text style={styles.font}>ضً</Text>
+
+  // TON
+
+  <Text style={styles.font}>طٌ</Text>
+  <Text style={styles.font}>طٍ</Text>
+  <Text style={styles.font}>طً</Text>
+
+  // DZON
+
+  <Text style={styles.font}>ظٌ</Text>
+  <Text style={styles.font}>ظٍ</Text>
+  <Text style={styles.font}>ظً</Text>
+
+  // 'AN
+
+  <Text style={styles.font}>عٌ</Text>
+  <Text style={styles.font}>عٍ</Text>
+  <Text style={styles.font}>عً</Text>
+
+  // GON
+
+  <Text style={styles.font}>غٌ</Text>
+  <Text style={styles.font}>غٍ</Text>
+  <Text style={styles.font}>غً</Text>
+
+  // FAN
+
+  <Text style={styles.font}>فٌ</Text>
+  <Text style={styles.font}>فٍ</Text>
+  <Text style={styles.font}>فً</Text>
+
+  // QO
+
+  <Text style={styles.font}>قٌ</Text>
+  <Text style={styles.font}>قٍ</Text>
+  <Text style={styles.font}>قً</Text>
+
+  // KHA
+  
+  <Text style={styles.font}>كٌ</Text>
+  <Text style={styles.font}>كٍ</Text>
+  <Text style={styles.font}>كً</Text>
+
+  // LAN
+
+  <Text style={styles.font}>لٌ</Text>
+  <Text style={styles.font}>لٍ</Text>
+  <Text style={styles.font}>لً</Text>
+
+  // MAN
+
+  <Text style={styles.font}>مٌ</Text>
+  <Text style={styles.font}>مٍ</Text>
+  <Text style={styles.font}>مً</Text>
+
+  // NAN
+
+  <Text style={styles.font}>نٌ</Text>
+  <Text style={styles.font}>نٍ</Text>
+  <Text style={styles.font}>نً</Text>
+
+  // WAN
+
+  <Text style={styles.font}>وٌ</Text>
+  <Text style={styles.font}>وٍ</Text>
+  <Text style={styles.font}>وً</Text>
+
+  // HAN
+
+  <Text style={styles.font}>هٌ</Text>
+  <Text style={styles.font}>هٍ</Text>
+  <Text style={styles.font}>هً</Text>
+
+  // YAN
+
+  <Text style={styles.font}>يٌ</Text>
+  <Text style={styles.font}>يٍ</Text>
+  <Text style={styles.font}>يً</Text>
+
+  <Text style={styles.font}>ءٌ</Text>
+  <Text style={styles.font}>ءٍ</Text>
+  <Text style={styles.font}>ءً</Text>
+  
+  
+
+
+
