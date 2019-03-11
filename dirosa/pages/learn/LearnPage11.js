@@ -376,7 +376,7 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row4}>
                     <Text style={styles.font}>يَرَهٗ</Text>
                   </View>
-                </View>   
+                </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٧</Text>
                 </View>
@@ -408,11 +408,11 @@ export default class LearnPage11 extends Component {
               <View style={styles.row}>
                 <View style={styles.row7}>
                   <View style={styles.row4}>
-                    <Text style={[styles.font, { fontSize: 30 }]}>حٰفِظَا‎تِ</Text>
+                    <Text style={[styles.font, { fontSize: 30 }]}n>حٰفِظَا‎تِ</Text>
                   </View>
                   <View style={styles.separator}></View>
                   <View style={styles.row4}>
-                    <Text style={[styles.font, { fontSize: 30 }]}>رَضِيَ لُهٗ</Text>
+                    <Text style={[styles.font, { fontSize: 30 }]}n>رَضِيَ لُهٗ</Text>
                   </View>
                   <View style={styles.separator}></View>
                   <View style={styles.row4}>
@@ -437,19 +437,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>ثَا‎بِتٌ</Text>
+                        <Text style={styles.font}>فَتَعَاطٰى فَعَقَرَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>تَا‎بِعٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بَا‎سِطٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ءَا‎مِنٌ</Text>
+                        <Text style={styles.font}>قَالُوا تَقَاسَمُوا</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -460,19 +452,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>دَا‎خِلٌ</Text> 
+                        <Text style={styles.font}>فَعَلَ هٰذَا بِاٰلِهَتِنَا</Text> 
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>خَا‎لِدٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>حَا‎مِدٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>جَا‎مِعٌ</Text>
+                        <Text style={styles.font}>هَارُوْتَ وَمَارُوْتَ</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -483,19 +467,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>سَا‎مِعٌ</Text>
+                        <Text style={styles.font}>كَانُوْافِيْهَافٰكِهِيْنَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>زَا‎جِرٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>رَا‎هِبٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ذَا‎بِحٌ</Text>
+                        <Text style={[styles.font, {fontSize: 30}]}>يُقَاتِلُوْنَ فِيْ سَبِيْلِهٖ</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -506,19 +482,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>طَا‎لِبٌ</Text>
+                        <Text style={styles.font}>وَصَاحِبَتِهٖ وَبَنِيْهِ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>ضَا‎رِبٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>صَا‎دِقٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>شَا‎كِرٌ</Text>
+                        <Text style={styles.font}>فَكَانَ عَاقِبَتَهُمَا</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -529,19 +497,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>فَا‎عِلٌ</Text>
+                        <Text style={styles.font}>يَخَافٌوْنَ عَذَابَهُ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>غَا‎فِرٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>عَا‎قِدٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ظَا‎لِمٌ</Text>
+                        <Text style={[styles.font, {fontSize: 29}]}>فَلَاتَلُوْمُوْنِيْ وَلُوْمُوْ</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -552,19 +512,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>مَا‎ضِيٌ</Text>
+                        <Text style={[styles.font, {fontSize: 30}]}>وَجَعَلَ فِيْهَارَوَاسِيَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>لَا‎زِمٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>كَا‎هِلٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>قَا‎عِدٌ</Text>
+                        <Text style={styles.font}>وَيَذَرَكَ وَاٰلِهَتَكَ</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -575,19 +527,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>يَا‎بِسٌ</Text>
+                        <Text style={styles.font}>وَخَرَقُوْالَهٗ بَنِيْنَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>هَا‎لِكٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>وَا‎سِعٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>نَا‎ظِرٌ</Text>
+                        <Text style={styles.font}>بِمَاتُفِيْضُوْنَ فِيْهِ</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -598,19 +542,11 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>شَفِيعٌ</Text>
+                        <Text style={[styles.font, {fontSize: 32}]}>صَدَقُوْامَاعَاهَدُوْا</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>سَمِيعٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بَشِي‎ْرٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>أَسِي‎ْرٌ</Text>
+                        <Text style={[styles.font, {fontSize: 30}]}>وَهَامٰنَ وَجٌنُوْدَهُمَا</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
@@ -621,380 +557,17 @@ export default class LearnPage11 extends Component {
                   <View style={styles.row}>
                     <View style={styles.row7}>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>جَلِيلٌ</Text>
+                        <Text style={styles.font}>فَغُلِبُوْاهُنَالِكَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row4}>
-                        <Text style={styles.font}>قَلِيلٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بَدِيعٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>جَمِيعٌ</Text>
+                        <Text style={styles.font}>لِاٰدَمَ فَسَجَدُوْا</Text>
                       </View>
                     </View>
                     <View style={styles.row1}>
                         <Text style={styles.font2}>٩</Text>
                     </View>
                   </View>
-
-                </View>
-              </View>
-
-              <View style={{ flex: 1, width: screenWidth }}>
-                <View style={styles.column}>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>تَا‎بِعِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بَا‎سِطِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ءَا‎مِنِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                      <Text style={styles.font2}>١</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>حَا‎فِظِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>جَا‎حِلِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ثَا‎بِتِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٢</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ذَا‎هِبِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>دَا‎خِلِينَ</Text> 
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>خَا‎لِصِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٣</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>سَا‎بِعِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>زَا‎هِدِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>رَا‎شِدِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٤</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ضَا‎رِبِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>صَا‎بِرِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>شَا‎فِعِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٥</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>عَا‎مِلِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>ظَا‎لِمِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>طَا‎لِبِينَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٦</Text>
-                    </View>
-                  </View>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                     <View style={styles.row4}>
-                        <Text style={styles.font}>يَتَغَا‎مَزُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 32 } ]}>يَتَقَا‎سَمُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>يَتَلَا‎وَمُونَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٧</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 32 } ]}>يَتَطَا‎عَمُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>يَتَرَا‎حَمُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 32 } ]}>يَتَخَا‎مَدُونَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٨</Text>
-                    </View>
-                  </View>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                     <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 32 } ]}>يَتَشَا‎كَرُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 32 } ]}>يَتَحَا‎مَدُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={[styles.font, { fontSize: 30 } ]}>يَتَصَا‎لَحُونَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٩</Text>
-                    </View>
-                  </View>
-
-                </View>
-              </View>
-
-              <View style={{ flex: 1, width: screenWidth }}>
-                <View style={styles.column}>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>مَآ‎ءً</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>صَآ‎ءِمٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بَآ‎ءِسٌ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                      <Text style={styles.font2}>١</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>طَآ‎ءِعِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>نَآ‎ءِمُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>طَآ‎ءِفَة‎ٌ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٢</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>دِمَآ‎ءَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>أَضَآ‎ءَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>وَرَآ‎ءَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٣</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>يَشَآ‎ءُ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بُكَآ‎ءٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>حِدَآ‎ءٌ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٤</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>غُثَآ‎ءً</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>لِقَآ‎ءً</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بِنَآ‎ءً</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٥</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>مَرِيءًا‎</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>هَنِيءًا‎</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>سَمَآ‎ءٌ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٦</Text>
-                    </View>
-                  </View>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                     <View style={styles.row4}>
-                        <Text style={styles.font}>إِذَا‎جَآ‎ءَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>مَلَائِكَةٌ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>أُولَئِكَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٧</Text>
-                    </View>
-                  </View>
-
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>بِغَآ‎ءِبِينَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>سَرَآ‎ءِرَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>حَدَآ‎ىِٕقَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٨</Text>
-                    </View>
-                  </View>
-                  
-                  <View style={styles.row}>
-                    <View style={styles.row7}>
-                     <View style={styles.row4}>
-                        <Text style={styles.font}>يَتَسَآ‎ءَلُونَ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>سُفَهَآ‎ءُ</Text>
-                      </View>
-                      <View style={styles.separator}></View>
-                      <View style={styles.row4}>
-                        <Text style={styles.font}>شُهَدَآ‎ءَ</Text>
-                      </View>
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٩</Text>
-                    </View>
-                  </View>
-
                 </View>
               </View>
 

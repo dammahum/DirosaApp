@@ -78,5 +78,9 @@
     {
         "id" : 20,
         "theme": "Huruf Awal Surah, Lam Jalalah dan bacaan Ghorib Musykilat"
+    },
+    {
+        "id" : 21,
+        "theme": "Munaqosyah"
     }
 ]

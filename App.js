@@ -16,6 +16,10 @@ import LearnPage8 from './dirosa/pages/learn/LearnPage8';
 import LearnPage9 from './dirosa/pages/learn/LearnPage9';
 import LearnPage10 from './dirosa/pages/learn/LearnPage10';
 import LearnPage11 from './dirosa/pages/learn/LearnPage11';
+import LearnPage15 from './dirosa/pages/learn/LearnPage15';
+import LearnPage16 from './dirosa/pages/learn/LearnPage16';
+import LearnPage20 from './dirosa/pages/learn/LearnPage20';
+import LearnPage21 from './dirosa/pages/learn/LearnPage21';
 
 
 const AppNavigator = createStackNavigator({
@@ -34,9 +38,13 @@ const AppNavigator = createStackNavigator({
   Learn9: LearnPage9,
   Learn10: LearnPage10,
   Learn11: LearnPage11,
+  Learn15: LearnPage15,
+  Learn16: LearnPage16,
+  Learn20: LearnPage20,
+  Learn21: LearnPage21,
 },
 {
-  initialRouteName: 'Learn11',
+  initialRouteName: 'Learn20',
   defaultNavigationOptions: {
     header: null,
   }
