@@ -1036,10 +1036,12 @@ const styles = StyleSheet.create({
     fontSize: 34,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

@@ -39,12 +39,12 @@ export default class LearnPage11 extends Component {
                 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={styles.font}>يٰسۤ</Text>
-                    <Text style={styles.font}>حٰمۤ</Text>
-                    <Text style={styles.font}>طٰهٰ</Text>
-                    <Text style={styles.font}>صۤ</Text>
-                    <Text style={styles.font}>قۤ</Text>
-                    <Text style={styles.font}>نۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>يٰسۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>حٰمۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰهٰ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>صۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>قۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>نۤ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>١</Text>
@@ -53,12 +53,12 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={styles.font}>طٰسۤمّۤ</Text>
-                    <Text style={styles.font}>طٰسۤ</Text>
-                    <Text style={styles.font}>طٰهٰ</Text>
-                    <Text style={styles.font}>الۤمّۤرٰ</Text>
-                    <Text style={styles.font}>الۤمّۤ</Text>
-                    <Text style={styles.font}>الۤرٰ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰسۤمّۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰسۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰهٰ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤرٰ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤرٰ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>٢</Text>
@@ -67,9 +67,9 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={styles.font}>كۤهٰيٰعۤصۤ</Text>
-                    <Text style={styles.font}>عۤسۤقۤ</Text>
-                    <Text style={styles.font}>الۤمّۤصۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>كۤهٰيٰعۤصۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>عۤسۤقۤ</Text>
+                    <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤصۤ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>٣</Text>
@@ -96,7 +96,7 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, { fontSize: 27 } ]}>فَاِنَّ اللّٰهَ غَنِيٌّ حَمِيْدٌ ⚬ وَاِذْ قَالَ لُقْمٰنُ لِابْنِهٖ</Text>
+                    <Text style={[styles.font, { fontSize: 29 } ]}>فَاِنَّ اللّٰهَ غَنِيٌّ حَمِيْدٌ ⚬ وَاِذْ قَالَ لُقْمٰنُ لِابْنِهٖ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>٦</Text>
@@ -105,7 +105,7 @@ export default class LearnPage11 extends Component {
                 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, { fontSize: 27 } ]}>وَهُوَ يَعِظُهٗ يٰبُنَيَّ لَا تُشْرِكْ بِاللّٰهِ ۗاِنَّ الشِّرْكَ</Text>
+                    <Text style={[styles.font, { fontSize: 29 } ]}>وَهُوَ يَعِظُهٗ يٰبُنَيَّ لَا تُشْرِكْ بِاللّٰهِ ۗاِنَّ الشِّرْكَ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>٧</Text>
@@ -123,7 +123,7 @@ export default class LearnPage11 extends Component {
                 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, { fontSize: 24 } ]}>حَمَلَتْهُ اُمُّهٗ وَهْنًا عَلٰى وَهْنٍ وَّفِصَالُهٗ فِيْ عَامَيْنِ</Text>
+                    <Text style={[styles.font, { fontSize: 29 } ]}>حَمَلَتْهُ اُمُّهٗ وَهْنًا عَلٰى وَهْنٍ وَّفِصَالُهٗ فِيْ عَامَيْنِ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>٩</Text>
@@ -429,7 +429,7 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, {fontSize: 22} ]}>وَارْحَمْنَا ۗ اَنْتَ مَوْلٰىنَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكٰفِرِيْنَ ⚬</Text>
+                    <Text style={[styles.font, {fontSize: 25} ]}>وَارْحَمْنَا ۗ اَنْتَ مَوْلٰىنَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكٰفِرِيْنَ ⚬</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>١١</Text>
@@ -525,7 +525,7 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, {fontSize: 24} ]}>وَيُقْذَفُوْنَ مِنْ كُلِّ جَانِبٍۖ ⚬ دُحُوْرًا وَّلَهُمْ عَذَابٌ</Text>
+                    <Text style={[styles.font, {fontSize: 26} ]}>وَيُقْذَفُوْنَ مِنْ كُلِّ جَانِبٍۖ ⚬ دُحُوْرًا وَّلَهُمْ عَذَابٌ</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>١٠</Text>
@@ -534,7 +534,7 @@ export default class LearnPage11 extends Component {
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
-                    <Text style={[styles.font, {fontSize: 21} ]}>وَّاصِبٌ⚬اِلَّا مَنْ خَطِفَ الْخَطْفَةَ فَاَتْبَعَهٗ شِهَابٌ ثَاقِبٌ⚬</Text>
+                    <Text style={[styles.font, {fontSize: 24} ]}>وَّاصِبٌ⚬اِلَّا مَنْ خَطِفَ الْخَطْفَةَ فَاَتْبَعَهٗ شِهَابٌ ثَاقِبٌ⚬</Text>
                   </View>
                   <View style={styles.row1}>
                     <Text style={styles.font2}>١١</Text>
@@ -754,6 +754,250 @@ export default class LearnPage11 extends Component {
              </View>
             </View>
 
+            <View style={{ flex: 1, width: screenWidth }}>
+            <View style={styles.column}>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ⚬</Text>
+                    </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>١</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>سَبِّحِ اسْمَ رَبِّكَ الْاَعْلَى⚬الَّذِيْ خَلَقَ فَسَوّٰى⚬</Text>
+                    </View>
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَالَّذِيْ قَدَّرَ فَهَدٰى⚬وَالَّذِيْٓ اَخْرَجَ الْمَرْعٰى⚬</Text>
+                    </View>      
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٣</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>فَجَعَلَهٗ غُثَاۤءً اَحْوٰى⚬سَنُقْرِئُكَ فَلَا تَنْسٰىٓ⚬</Text>
+                    </View>   
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٤</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>اِلَّا مَا شَاۤءَ اللّٰهُ اِنَّهٗ يَعْلَمُ الْجَهْرَ وَمَا يَخْفٰى⚬</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٥</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَنُيَسِّرُكَ لِلْيُسْرٰى⚬فَذَكِّرْ اِنْ نَّفَعَتِ الذِّكْرٰى⚬</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٦</Text>
+                </View>
+              </View>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>سَيَذَّكَّرُ مَنْ يَّخْشٰى⚬وَيَتَجَنَّبُهَا الْاَشْقَى⚬</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٧</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>الَّذِيْ يَصْلَى النَّارَ الْكُبْرٰى⚬ثُمَّ لَا يَمُوْتُ فِيْهَا</Text>
+                    </View>        
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٨</Text>
+                </View>
+              </View>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَلَا يَحْيٰى⚬قَدْ اَفْلَحَ مَنْ تَزَكّٰى⚬</Text>
+                    </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٩</Text>
+                  </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <Text style={styles.font}>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</Text>
+                  </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>١٠</Text>
+                  </View>
+                </View>
+
+                <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <Text style={styles.font}>عَمَّ يَتَسَاۤءَلُوْنَ⚬عَنِ النَّبَاِ الْعَظِيْمِ⚬الَّذِيْ</Text>
+                  </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>١١</Text>
+                  </View>
+                </View>
+
+             </View>
+            </View>
+
+            <View style={{ flex: 1, width: screenWidth }}>
+            <View style={styles.column}>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>هُمْ فِيْهِ مُخْتَلِفُوْنَ⚬كَلَّا سَيَعْلَمُوْنَ⚬ثُمَّ</Text>
+                    </View>
+                </View>
+                <View style={styles.row1}>
+                  <Text style={styles.font2}>١</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>كَلَّا سَيَعْلَمُوْنَ⚬اَلَمْ نَجْعَلِ الْاَرْضَ مِهٰدًا⚬</Text>
+                    </View>
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٢</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَّالْجِبَالَ اَوْتَادًا⚬وَخَلَقْنٰكُمْ اَزْوَاجًا⚬</Text>
+                    </View>      
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٣</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا⚬وَجَعَلْنَا اللَّيْلَ</Text>
+                    </View>   
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٤</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>لِبَاسًا⚬وَجَعَلْنَا النَّهَارَ مَعَاشًا⚬وَبَنَيْنَا</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٥</Text>
+                </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>فَوْقَكُمْ سَبْعًا شِدَادًا⚬وَجَعَلْنَا سِرَاجًا وَهَّاجًا⚬</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٦</Text>
+                </View>
+              </View>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>وَأَنْزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا⚬لِنُخْرِجَ بِهِ</Text>
+                    </View>
+                  </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٧</Text>
+                </View>
+              </View>
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>حَبًّا وَّنَبَاتًا⚬وَجَنَّاتٍ أَلْفَافًا⚬إِنَّ يَوْمَ الْفَصْلِ</Text>
+                    </View>        
+                </View>
+                <View style={styles.row1}>
+                    <Text style={styles.font2}>٨</Text>
+                </View>
+              </View>
+              
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <View style={styles.row2}>
+                      <Text style={styles.font}>كَانَ مِيقَاتًا⚬يَوْمَ يُنْفَخُ فِي الصُّورِ فَتَأْتُونَ</Text>
+                    </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٩</Text>
+                  </View>
+              </View>
+
+              <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <Text style={styles.font}>أَفْوَاجًا⚬وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا⚬</Text>
+                  </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>١٠</Text>
+                  </View>
+                </View>
+
+                <View style={styles.row}>
+                  <View style={styles.row7}>
+                    <Text style={styles.font}>وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا⚬</Text>
+                  </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>١١</Text>
+                  </View>
+                </View>
+                
+             </View>
+            </View>
+
           </ScrollView>
 
         </Container>
@@ -787,11 +1031,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
-  row5: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
   row2: {
     flex: 1,
     flexDirection: 'row',
@@ -805,13 +1044,15 @@ const styles = StyleSheet.create({
     borderLeftColor: '#aaa',
   },
   font: {
-    fontSize: 26,
+    fontSize: 28,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,
@@ -820,9 +1061,4 @@ const styles = StyleSheet.create({
     borderLeftColor: '#aaa',
     borderRightColor: '#aaa',
   },
-  row1a: {
-    flex: 0.25,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  }
 });

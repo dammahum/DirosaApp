@@ -115,9 +115,9 @@ export default class LearnPage8 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row3}>
-                      <Text style={styles.font}>كُمَ</Text>
-                      <Text style={styles.font}>كِمَ</Text>
-                      <Text style={styles.font}>كَمَ</Text>
+                      <Text style={[styles.font, {fontSize: 29}]}>كُمَ</Text>
+                      <Text style={[styles.font, {fontSize: 29}]}>كِمَ</Text>
+                      <Text style={[styles.font, {fontSize: 29}]}>كَمَ</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row3}>
@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   row1: {
-    flex: 1,
+    flex: 0.35,
     justifyContent: 'center',
     alignItems: 'center',
     borderLeftWidth: 2,
@@ -511,10 +511,12 @@ const styles = StyleSheet.create({
     fontSize: 34,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

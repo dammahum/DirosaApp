@@ -183,7 +183,7 @@ export default class LearnPage10 extends Component {
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>مَاخَلَقَكُمْ وَﻻَبَعْثُكُمْ‎</Text>
+                      <Text style={[styles.font, {fontSize: 26} ]}>مَاخَلَقَكُمْ وَﻻَبَعْثُكُمْ‎</Text>
                     </View>
                   </View>
                   <View style={styles.row1}>
@@ -230,11 +230,11 @@ export default class LearnPage10 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 24, marginTop: 16} ]}>وَمَا يَعْلَمُ تَأْوِيْلَهُ إﻻَّاللَّهُ</Text>
+                      <Text style={[styles.font, {fontSize: 26, marginTop: 16} ]}>وَمَا يَعْلَمُ تَأْوِيْلَهُ إﻻَّاللَّهُ</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 21, marginTop: 16} ]}>وَأَقْبَلَ بَعْضُهُمْ عَلَى بَعْضٍ</Text>
+                      <Text style={[styles.font, {fontSize: 25, marginTop: 16} ]}>وَأَقْبَلَ بَعْضُهُمْ عَلَى بَعْضٍ</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -419,10 +419,12 @@ const styles = StyleSheet.create({
     fontSize: 29,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

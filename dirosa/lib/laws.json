@@ -1,17 +1,52 @@
 [
   {
     "id" : 1,
-    "title" : "Izhar",
-    "content" : "Izhar artinya jelas atau terang. Apabila ada nun mati atau tanwin (ـًـٍـٌ / نْ)bertemu dengan salah satu huruf halqi (ا ح خ ع غ ه ), maka dibacanya jelas/terang."
+    "title" : "QALQALAH",
+    "content" : "Menurut bahasa qalqalah artinya gerak, sedangkan menurut istilah qalqalah adalah bunyi huruf yang memantul bila ia mati atau dimatikan, atau suara membalik dengan bunyi rangkap. Adapun huruf qalqalah terdiri atas lima huruf, yaitu : ق , ط , ب , ج , د agar mudah dihafal dirangkai menjadi قُطْبُ جَدٍ."
   },
   {
     "id" : 2,
-    "title" : "Idgham Bighunnah",
-    "content" : "Idgham Bighunnah (dilebur dengan disertai dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya dengan disertai (ber)dengung, jika bertemu dengan salah satu huruf yang empat, yaitu: ن م و ي"
+    "title" : "LAM QOMARIYAH",
+    "content" : "Lam Qamariyah adalah 'Al' atau alif lam mati yang bertemu dengan salah satu huruf qamariyah dan dibacanya jelas/izhar. Huruf-huruf tersebut adalah : ا ب ج ح خ ع غ ف ق ك م و ه ي."
   },
   {
     "id" : 3,
-    "title" : "Idgham Bilaghunnah",
-    "content" : "Idgham Bilaghunnah (dilebur tanpa dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya tanpa disertai dengung, jika bertemu dengan huruf lam atau ra (ر، ل)"
-  }
+    "title" : "LAM SYAMSIYAH",
+    "content" : "Lam Syamsiyah adalah “Al” atau alif lam mati yang bertemu dengan salah satu huruf syamsiyah dan dibacanya lebur/idghom (bunyi “al’ tidak dibaca). Huruf-huruf tersebut adalah ت ث د ذ ر ز س ش ص ض ط ظ ل ن."
+  },
+  {
+    "id" : 4,
+    "title" : "IZHAR",
+    "content" : "Izhar artinya jelas atau terang. Apabila ada nun mati atau tanwin (ـًـٍـٌ / نْ)bertemu dengan salah satu huruf halqi (ا ح خ ع غ ه ), maka dibacanya jelas/terang."
+  },
+  {
+    "id" : 5,
+    "title" : "IDGHAM BIGHUNNAH",
+    "content" : "Idgham Bighunnah (dilebur dengan disertai dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya dengan disertai (ber)dengung, jika bertemu dengan salah satu huruf yang empat, yaitu: ن م و ي."
+  },
+  {
+    "id" : 6,
+    "title" : "IDGHAM BILAGHUNNAH",
+    "content" : "Idgham Bilaghunnah (dilebur tanpa dengung) Yaitu memasukkan/meleburkan huruf nun mati atau tanwin (ـًـٍـٌ / نْ)kedalam huruf sesudahnya tanpa disertai dengung, jika bertemu dengan huruf lam atau ra (ر، ل)."
+  },
+  {
+    "id" : 7,
+    "title" : "IQLAB",
+    "content" : "Iqlab artinya menukar atau mengganti. Apabila ada nun mati atau tanwin(ـًـٍـٌ / نْ) bertemu dengan huruf ba (ب), maka cara membacanya dengan menyuarakan /merubah bunyi نْ menjadi suara mim (مْ), dengan merapatkan dua bibir serta mendengung."
+  },
+  {
+    "id" : 8,
+    "title" : "IKHFA",
+    "content" : "Ikhfa artinya menyamarkan atau tidak jelas. Apabila ada nun mati atau tanwin (ـًـٍـٌ /نْ) bertemu dengan salah satu huruf ikhfa yang 15,  ta'(ت), tha’ (ث), jim (ج), dal (د), dzal (ذ), zai (ز), sin (س), syin (ش), sod (ص), dhod (ض), tho (ط), zho (ظ), fa’ (م), qof (م), dan kaf (ك). maka dibacanya samar-samar, antara jelas dan tidak (antara izhar dan idgham) dengan mendengung."
+  },
+  {
+    "id" : 9,
+    "title" : "IKHFA SYAFAWI",
+    "content" : "Apabila mim mati (مْ) bertemu dengan ba (ب), maka cara membacanya harus dibunyikan samar-samar di bibir dan didengungkan."
+  },
+  {
+    "id" : 10,
+    "title" : "IDGHAM MIMI",
+    "content" : "Apabila mim mati (مْ) bertemu dengan mim (مْ), maka cara membacanya adalah seperti menyuarakan mim rangkap atau ditasyidkan dan wajib dibaca dengung."
+  },
 ]

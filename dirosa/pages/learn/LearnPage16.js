@@ -163,7 +163,7 @@ export default class LearnPage16 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 18}]}>alif dan lam melebur ke huruf yg bertasydid</Text>
+                      <Text style={[styles.font, {fontSize: 16}]}>alif dan lam melebur ke huruf yg bertasydid</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
@@ -310,7 +310,7 @@ export default class LearnPage16 extends Component {
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 16, marginTop: 0}]}>Suara mim dan nun tasydid ditahan 2 harakat dan berdengung</Text>
+                      <Text style={[styles.font, {fontSize: 14, marginTop: 0}]}>Suara mim dan nun tasydid ditahan 2 harakat dan berdengung</Text>
                     </View>
                   </View>
                   <View style={styles.row1}>
@@ -336,7 +336,7 @@ export default class LearnPage16 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 22}]}>فَإِنَّ الْجَحِيْمَ هِيَ الْمَأْوى</Text>
+                      <Text style={[styles.font, {fontSize: 26}]}>فَإِنَّ الْجَحِيْمَ هِيَ الْمَأْوى</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
@@ -385,7 +385,7 @@ export default class LearnPage16 extends Component {
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 24}]}>فَإِنَّ الْجَنَّةَهِيَ الْمَأْوَى</Text>
+                      <Text style={[styles.font, {fontSize: 28}]}>فَإِنَّ الْجَنَّةَهِيَ الْمَأْوَى</Text>
                     </View>
                   </View>
                   <View style={styles.row1}>
@@ -400,7 +400,7 @@ export default class LearnPage16 extends Component {
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={[styles.font, {fontSize: 22}]}>إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا</Text>
+                      <Text style={[styles.font, {fontSize: 27}]}>إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا</Text>
                     </View>
                   </View>
                   <View style={styles.row1}>
@@ -495,10 +495,12 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

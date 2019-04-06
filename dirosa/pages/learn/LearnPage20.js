@@ -40,12 +40,12 @@ export default class LearnPage20 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>يٰسۤ</Text>
-                      <Text style={styles.font}>حٰمۤ</Text>
-                      <Text style={styles.font}>طٰهٰ</Text>
-                      <Text style={styles.font}>صۤ</Text>
-                      <Text style={styles.font}>قۤ</Text>
-                      <Text style={styles.font}>نۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>يٰسۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>حٰمۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰهٰ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>صۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>قۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>نۤ</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -56,11 +56,11 @@ export default class LearnPage20 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>طٰسۤمّۤ</Text>
-                      <Text style={styles.font}>طٰسۤ</Text>
-                      <Text style={styles.font}>الۤمّۤرٰ</Text>
-                      <Text style={styles.font}>الۤمّۤ</Text>
-                      <Text style={styles.font}>الۤرٰ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰسۤمّۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>طٰسۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤرٰ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤرٰ</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -71,9 +71,9 @@ export default class LearnPage20 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>كۤهٰيٰعۤصۤ</Text>
-                      <Text style={styles.font}>عۤسۤقۤ</Text>
-                      <Text style={styles.font}>الۤمّۤصۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>كۤهٰيٰعۤصۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>عۤسۤقۤ</Text>
+                      <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>الۤمّۤصۤ</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -84,11 +84,11 @@ export default class LearnPage20 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>لِلّهِ بِاللّهِ بِسْمِ اللّهِ</Text>
+                      <Text style={[styles.font, {fontSize: 27}]}>لِلّٰهِ بِاللّٰهِ بِسْمِ اللّٰهِ⚬</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>وَالّلهُ رَسُوْلُالّلهِ‎</Text>
+                      <Text style={styles.font}>وَاللّٰهُ رَسُوْلُاللّٰهِ‎⚬</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -99,11 +99,11 @@ export default class LearnPage20 extends Component {
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>بِرَادِّيْ رِزْقِهِمْ‎</Text>
+                      <Text style={styles.font}>بِرَادِّيْ رِزْقِهِمْ⚬‎</Text>
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>وَﻻَالضَّالّيْنَ</Text>
+                      <Text style={styles.font}>وَلَا ٱلضَّآلِّينَ⚬</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -148,7 +148,7 @@ export default class LearnPage20 extends Component {
                     </View>
                     <View style={styles.separator}></View>
                     <View style={styles.row4}>
-                      <Text style={styles.font}>بِسْمِ اللّهِ مَجْرَاهَا</Text>
+                      <Text style={styles.font}>بِسْمِ اللّٰهِ مَجْرَاهَا</Text>
                     </View>
                     </View>
                   <View style={styles.row1}>
@@ -228,10 +228,12 @@ const styles = StyleSheet.create({
     fontSize: 31,
     color: '#000',
     marginTop: 12,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

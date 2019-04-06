@@ -557,7 +557,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   row1: {
-    flex: 1,
+    flex: 0.35,
     justifyContent: 'center',
     alignItems: 'center',
     borderLeftWidth: 2,
@@ -567,10 +567,12 @@ const styles = StyleSheet.create({
     fontSize: 39,
     color: '#000',
     marginTop: 7,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

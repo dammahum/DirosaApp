@@ -9,14 +9,15 @@ export default class LawPage extends Component {
     return (
       <View style={styles.Index}>
 
-      <Text style={styles.headIndex}>
-        { item.title }
-      </Text>
-      
-      {expanded 
-        ? <Icon style={{fontSize: 18, color: '#fff'}} type='MaterialIcons' name='keyboard-arrow-up' />
-        : <Icon style={{fontSize: 18, color: '#fff'}} type='MaterialIcons' name='keyboard-arrow-down' />
-      }
+        <Text style={styles.headIndex}>
+          { item.title }
+        </Text>
+        
+        {expanded 
+          ? <Icon style={styles.iconIndex} type='MaterialIcons' name='keyboard-arrow-up' />
+          : <Icon style={styles.iconIndex} type='MaterialIcons' name='keyboard-arrow-down' />
+        }
+
       </View>
     );
   }
@@ -26,29 +27,32 @@ export default class LawPage extends Component {
 
     return (
         <Container>
-        <Header style={{ backgroundColor: '#1B5A07' }}>
-          <Left>
-            <Button
-              transparent
-              onPress={() => goBack()}
-            >
-              <Icon type='MaterialIcons' name='arrow-back'></Icon>
-            </Button>
-          </Left>
-          <Body>
-            <Title style={styles.titleHeader}>HUKUM BACAAN</Title>
-          </Body>
-          <Right />
-        </Header>
+          <Header style={{ backgroundColor: '#1B5A07' }}>
+            <Left>
+              <Button
+                transparent
+                onPress={() => goBack()}
+              >
+                <Icon type='MaterialIcons' name='arrow-back'></Icon>
+              </Button>
+            </Left>
+            <Body>
+              <Title style={styles.titleHeader}>HUKUM BACAAN</Title>
+            </Body>
+            <Right />
+          </Header>
 
-        <Content style={styles.wrapIndex}>
-        <Accordion
-          dataArray={laws}
-          animation={true}
-          expanded={true}
-          renderHeader={this._renderHeader}
-          contentStyle={styles.textIndex}
-          />
+        <Content style={styles.mainBackground}>
+          <View style={styles.wrapIndex}>
+            <Accordion
+              dataArray={laws}
+              animation={true}
+              expanded={true}
+              renderHeader={this._renderHeader}
+              contentStyle={styles.textIndex}
+              style={styles.accordionStyle}
+              />
+          </View>
         </Content>
       </Container>
     );
@@ -57,30 +61,39 @@ export default class LawPage extends Component {
 
 const styles = StyleSheet.create ({
     titleHeader: {
-      fontFamily: 'lato-black',
+      fontFamily: 'Overpass-Black',
     },
     wrapIndex: {
       marginHorizontal: 15,
       marginVertical: 20,
     },
+    mainBackground: {
+      backgroundColor: '#76B800',
+    },
+    iconIndex: {
+      fontSize: 22,
+      color: '#1B5A07',
+    },
     headIndex: {
-      color: '#fff',
-      fontFamily: 'lato-bold',
-      fontSize: 16,
+      color: '#1B5A07',
+      fontFamily: 'Overpass-Bold',
+      fontSize: 20,
     },
     Index: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-      padding: 20,
-      backgroundColor: '#76B800',
-      borderRadius: 5,
+      padding: 20, 
+      backgroundColor: '#fff',
+      borderRadius: 50,
       elevation: 5,
       marginVertical: 7,
     },
     textIndex: {
-      fontFamily: 'lato-bold',
+      fontFamily: 'Overpass-Bold',
+      padding: 15,
       fontSize: 16,
-      color: 'white',
-      backgroundColor: '#1B5A07',
+      color: '#1B5A07',
+      backgroundColor: '#fff',
+      borderRadius: 30,
     },
   });

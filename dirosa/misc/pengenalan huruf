@@ -1,0 +1,104 @@
+<View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ا</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ب</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ت</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={styles.font}>ث</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>ج</Text>
+              </View>
+            </View>
+
+            <View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>ح</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>خ</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>د</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={styles.font}>ذ</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>ر</Text>
+              </View>
+            </View>
+
+            <View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>ز</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 3}]}>س</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 3}]}>ش</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={[styles.font, { marginTop: 0}]}>ص</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>ض</Text>
+              </View>
+            </View>
+
+            <View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ط</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ظ</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ع</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={styles.font}>غ</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ف</Text>
+              </View>
+            </View>
+
+            <View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ق</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ك</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ل</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={[styles.font, { marginTop: 0}]}>م</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={styles.font}>ن</Text>
+              </View>
+            </View>
+
+            <View style={styles.row}>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 0}]}>و</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 5}]}>ه</Text>
+              </View>
+              <View style={ styles.circle }>
+                <Text style={[styles.font, { marginTop: 5}]}>ء</Text>
+              </View>
+              <View style={ styles.circle }>
+               <Text style={styles.font}>ي</Text>
+              </View>
+            </View>

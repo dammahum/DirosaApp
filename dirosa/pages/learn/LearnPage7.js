@@ -346,9 +346,9 @@ export default class LearnPage7 extends Component {
                   </View>
                   <View style={styles.separator}></View>
                   <View style={styles.row3}>
-                    <Text style={[styles.font, {fontSize: 34, marginTop: 12} ]}>كُمَ</Text>
-                    <Text style={[styles.font, {fontSize: 34, marginTop: 12} ]}>كِمَ</Text>
-                    <Text style={[styles.font, {fontSize: 34, marginTop: 12} ]}>كَمَ</Text>
+                    <Text style={[styles.font, {fontSize: 29, marginTop: 12} ]}>كُمَ</Text>
+                    <Text style={[styles.font, {fontSize: 29, marginTop: 12} ]}>كِمَ</Text>
+                    <Text style={[styles.font, {fontSize: 29, marginTop: 12} ]}>كَمَ</Text>
                   </View>
                 </View>
                 <View style={styles.row1}>
@@ -513,7 +513,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   row1: {
-    flex: 1,
+    flex: 0.35,
     justifyContent: 'center',
     alignItems: 'center',
     borderLeftWidth: 2,
@@ -523,10 +523,12 @@ const styles = StyleSheet.create({
     fontSize: 39,
     color: '#000',
     marginTop: 7,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,

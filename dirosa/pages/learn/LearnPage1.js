@@ -302,7 +302,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>١</Text>
                 </View>
               </View>
 
@@ -356,7 +356,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٣</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -382,7 +382,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٤</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -408,7 +408,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٥</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -434,7 +434,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٦</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -460,7 +460,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٧</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -486,7 +486,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٨</Text>
                 </View>
               </View>
               <View style={styles.row}>
@@ -512,7 +512,7 @@ export default class LearnPage1 extends Component {
                     </View>          
                 </View>
                 <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
+                    <Text style={styles.font2}>٩</Text>
                 </View>
               </View>
 
@@ -556,7 +556,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   row1: {
-    flex: 1,
+    flex: 0.35,
     justifyContent: 'center',
     alignItems: 'center',
     borderLeftWidth: 2,
@@ -566,10 +566,12 @@ const styles = StyleSheet.create({
     fontSize: 39,
     color: '#000',
     marginTop: 7,
+    fontFamily: 'arab-regular',
   },
   font2: {
     fontSize: 26,
     color: '#000',
+    fontFamily: 'arab-regular',
   },
   separator: {
     marginHorizontal: 7,
