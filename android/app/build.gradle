@@ -97,8 +97,8 @@ def enableProguardInReleaseBuilds = true
  * Used for versioning
  */
 def versionMajor = 0
-def versionMinor = 0
-def versionPatch = 1
+def versionMinor = 1
+def versionPatch = 0
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -155,6 +155,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-sound')
     compile project(':react-native-splash-screen')
     compile project(':react-native-webview')
     compile project(':react-native-vector-icons')

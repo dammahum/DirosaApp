@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, TouchableWithoutFeedback } from 'react-native';
 import { Container, Header, Left, Body, Icon, Button, Title, } from 'native-base';
 import { ScrollView } from 'react-native-gesture-handler';
 
+import Sound from 'react-native-sound';
+
 export default class LearnPage18 extends Component {
+
+  state = {
+    play:false,
+    audio:null
+  };
+
+  playSound(name) {
+
+    if(this.state.audio != null) {
+      this.state.audio.stop()
+      this.state.audio.reset()
+    }
+
+    let audio = new Sound(name+'.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        alert('failed to load the sound', error);
+        return;
+      }
+
+      this.setState({
+        play:name,
+        audio:audio
+      })
+
+      this.state.audio.play((success) => {
+        this.state.audio.stop()
+        this.setState({play:false})
+      });
+
+    });
+  }
+
   render() {
 
     let screenWidth = Dimensions.get('window').width;
@@ -36,14 +70,15 @@ export default class LearnPage18 extends Component {
 
             <View style={{ flex: 1, width: screenWidth }}>
               <View style={styles.column}>
-                
+
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b1')}>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={[styles.row4, {backgroundColor: '#000'}]}>
                       <Text style={[styles.font, {fontSize: 12, color: '#fff' ,textAlign: 'center', marginTop: 5}]}>Nun sukun / tanwin bertemu {'\n'} huruf ب, dibaca dengan dengung {'\n'} ditahan 2 harokat.</Text>
                     </View>
                     <View style={styles.separator}></View>
-                    <View style={styles.row4}>
+                    <View style={[styles.row4, {backgroundColor: this.state.play == 'h57b1' ? '#76B800' : '#fff'}]}>
                       <Text style={styles.font}>نُوْرٌ ۢ بَيْنِيْ - عَوَانٌ ۢ بَيْنَ</Text>
                     </View>
                   </View>
@@ -51,8 +86,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b2')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b2' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>هٰذَا مُغْتَسَلٌ ۢ بَارِدٌ⚬</Text>
@@ -66,8 +103,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b3')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b3' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>مِّنْ اٰيَةٍ ۢ بَيِّنَةٍ⚬</Text>
@@ -81,8 +120,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b4')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b4' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>كُلُّ نَفْسٍ ۢ بِمَا كَسَبَتْ⚬</Text>
@@ -96,8 +137,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b5')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b5' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>ذٰلِكَ رَجْعٌ ۢ بَعِيْدٌ⚬</Text>
@@ -111,14 +154,16 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b6')}>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={[styles.row4, {backgroundColor: '#000'}]}>
                       <Text style={[styles.font, {fontSize: 12, color: '#fff' ,textAlign: 'center', marginTop: 5}]}>Mim sukun bertemu م {'\n'} dan ب, dibaca dengung {'\n'} ditahan 2 harokat</Text>
                     </View>
                     <View style={styles.separator}></View>
-                    <View style={styles.row4}>
+                    <View style={[styles.row4, {backgroundColor: this.state.play == 'h57b6' ? '#76B800' : '#fff'}]}>
                       <Text style={[styles.font, {fontSize: 20}]}>كَفَرْتُمْ بَعْدَ⚬لَكُمْ مَا كَسَبْتُمْ</Text>
                     </View>
                   </View>
@@ -126,8 +171,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b7')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b7' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={[styles.font, {fontSize: 24}]}>فَهُم مِّن مَّغْرَمٍ مُّثْقَلُونَ⚬</Text>
@@ -141,8 +188,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٧</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b8')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b8' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={[styles.font, {fontSize: 23}]}>إِنَّا خَلَقْنَٰاهُمْ مِمَّا يَعْمَلُونَ⚬</Text>
@@ -156,8 +205,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h57b9')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h57b9' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={[styles.font, {fontSize: 20}]}>يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا⚬</Text>
@@ -171,14 +222,16 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+              </TouchableWithoutFeedback>
 
               </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
               <View style={styles.column}>
-                
-                <View style={styles.row}>
+
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b1')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b1' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>يَّهْدِيْٓ اِلَى الرُّشْدِ فَاٰمَنَّا بِهٖ وَلَنْ نُّشْرِكَ بِرَبِّنَآ اَحَدًا⚬</Text>
@@ -188,8 +241,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b2')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b2' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>وَّاَنَّهٗ تَعٰلٰى جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَّلَا وَلَدًا⚬</Text>
@@ -199,8 +254,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b3')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b3' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={[styles.font, {fontSize: 22}]}>نَتْلُوْا عَلَيْكَ مِنْ نَّبَاِ مُوْسٰى وَفِرْعَوْنَ بِالْحَقِّ لِقَوْمٍ يُّؤْمِنُوْنَ⚬</Text>
@@ -210,8 +267,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b4')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b4' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>اِنَّ فِرْعَوْنَ عَلَا فِى الْاَرْضِ وَجَعَلَ اَهْلَهَا شِيَعًا⚬</Text>
@@ -221,8 +280,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b5')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b5' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>عَيْنًا يَّشْرَبُ بِهَا عِبَادُ اللّٰهِ يُفَجِّرُوْنَهَا تَفْجِيْرًا⚬</Text>
@@ -232,8 +293,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b6')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b6' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>اِنَّ هٰذَا كَانَ لَكُمْ جَزَاۤءً وَّكَانَ سَعْيُكُمْ مَّشْكُوْرًا⚬</Text>
@@ -243,8 +306,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b7')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b7' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>قَالَ كَلَّا فَاذْهَبَا بِاٰيٰتِنَآ اِنَّا مَعَكُمْ مُّسْتَمِعُوْنَ⚬</Text>
@@ -254,8 +319,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٧</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b8')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b8' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>فَأْتِيَا فِرْعَوْنَ فَقُوْلَآ اِنَّا رَسُوْلُ رَبِّ الْعٰلَمِيْنَ⚬</Text>
@@ -265,8 +332,10 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h58b9')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h58b9' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>وَمَكَرُوا مَكْرًا وَمَكَرْنَا مَكْرًا وَهُمْ لَا يَشْعُرُونَ⚬</Text>
@@ -276,6 +345,7 @@ export default class LearnPage18 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
               </View>
             </View>
@@ -333,7 +403,7 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 26,
     color: '#000',
-    marginTop: 12,
+    alignSelf: 'center',
     fontFamily: 'arab-regular',
   },
   font2: {

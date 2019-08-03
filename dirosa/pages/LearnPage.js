@@ -27,24 +27,23 @@ export default class LearnPage extends Component {
         </Header>
 
         <Content style={styles.wrapIndex}>
-
-          <View style={styles.wrapBottom}>
-
           {learns.map((learn) => (
             <TouchableOpacity
               key={learn.id}
               style={styles.Index}
               onPress = {() => navigate('Learn'+learn.id)}
             >
-              <View>
-                <Text style={styles.textIndex}>PERTEMUAN KE - {learn.id} </Text>
-                <Text style={styles.textTheme}>{learn.theme}</Text>
+              <View style={styles.main}>
+                <View>
+                  <Text style={styles.textIndex}>PERTEMUAN KE - {learn.id} </Text>
+                  <Text style={styles.textTheme}>{learn.theme}</Text>
+                </View>
+                <View style={styles.icon}>
+                  <Icon type='MaterialIcons' name='navigate-next' style={styles.iconNext}></Icon>
+                </View>
               </View>
             </TouchableOpacity>
           ))}
-
-          </View>
-
         </Content>
       </Container>
     );
@@ -56,35 +55,42 @@ const styles = StyleSheet.create ({
     fontFamily: 'Overpass-Black',
   },
   wrapIndex: {
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    backgroundColor: '#76B800',
+    marginHorizontal: 10,
+    marginVertical: 10,
+    backgroundColor: '#ffffff',
   },
-  wrapBottom: {
-    marginBottom: 30,
+  main:{
+    flex: 1,
+    flexDirection: 'row',
   },
   Index: {
     flexDirection: 'row',
     paddingVertical: 12,
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     backgroundColor: '#fff',
-    borderRadius: 50,
-    elevation: 5,
+    borderRadius: 10,
+    elevation: 3,
     borderColor: '#1B5A07',
     marginVertical: 7,
   },
   textIndex: {
     fontFamily: 'Overpass-Black',
-    fontSize: 20,
+    fontSize: 18,
     color: '#1B5A07',
-    textAlign: 'center',
     width: 280,
   },
   textTheme: {
     fontFamily: 'Overpass-Bold',
     color: '#1B5A07',
-    textAlign: 'center',
-    fontSize: 16,
+    fontSize: 14,
     width: 280,
   },
+  icon: {
+    alignSelf: 'center',
+    marginLeft: 'auto',
+  },
+  iconNext: {
+    fontFamily: 'Overpass-Regular',
+    color: '#1B5A07',
+  }
 });

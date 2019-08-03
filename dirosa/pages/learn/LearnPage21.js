@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, TouchableOpacity } from 'react-native';
 import { Container, Header, Left, Body, Icon, Button, Title, } from 'native-base';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default class LearnPage11 extends Component {
+export default class LearnPage21 extends Component {
+
   render() {
 
     let screenWidth = Dimensions.get('window').width;
@@ -36,7 +37,7 @@ export default class LearnPage11 extends Component {
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={[styles.font, { fontFamily: 'lato-regular' }]}>يٰسۤ</Text>
@@ -50,6 +51,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -64,6 +66,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -75,6 +78,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -84,6 +88,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -93,6 +98,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -103,6 +109,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={[styles.font, { fontSize: 29 } ]}>وَهُوَ يَعِظُهٗ يٰبُنَيَّ لَا تُشْرِكْ بِاللّٰهِ ۗاِنَّ الشِّرْكَ</Text>
@@ -111,6 +118,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٧</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                  <View style={styles.row7}>
@@ -121,6 +129,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={[styles.font, { fontSize: 29 } ]}>حَمَلَتْهُ اُمُّهٗ وَهْنًا عَلٰى وَهْنٍ وَّفِصَالُهٗ فِيْ عَامَيْنِ</Text>
@@ -129,6 +138,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -138,13 +148,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ⚬</Text>
@@ -153,6 +164,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -162,6 +174,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -171,6 +184,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -180,6 +194,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -189,6 +204,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -198,6 +214,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -208,6 +225,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>الْمَدِيْنَةِ مَرَدُوْا عَلَى النِّفَاقِ لَا تَعْلَمُهُمْ</Text>
@@ -216,6 +234,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                  <View style={styles.row7}>
@@ -225,6 +244,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -234,13 +254,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>اِنِّيْ جَزَيْتُهُمُ الْيَوْمَ بِمَا صَبَرُوْٓااَنَّهُمْ هُمُ</Text>
@@ -249,6 +270,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -258,6 +280,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -267,6 +290,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -276,6 +300,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -285,6 +310,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -294,6 +320,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -304,6 +331,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>الْعَرْشِ الْكَرِيْمِ ⚬ وَمَنْ يَّدْعُ مَعَ اللّٰهِ اِلٰهًا</Text>
@@ -312,6 +340,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                  <View style={styles.row7}>
@@ -321,6 +350,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -330,13 +360,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>وَارْحَمْ وَاَنْتَ خَيْرُ الرّٰحِمِيْنَ ⚬ اٰمَنَ الرَّسُوْلُ</Text>
@@ -345,6 +376,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -354,6 +386,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -363,6 +396,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -372,6 +406,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -381,6 +416,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -390,6 +426,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -400,6 +437,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                  <View style={styles.row7}>
                     <Text style={styles.font}>اَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ اِصْرًا كَمَا</Text>
@@ -408,6 +446,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -417,6 +456,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -426,6 +466,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -435,13 +476,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١١</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُوْنُوْا قَوَّامِيْنَ لِلّٰهِ شُهَدَاۤءَ</Text>
@@ -450,6 +492,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -459,6 +502,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -468,6 +512,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -477,6 +522,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -486,6 +532,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -495,6 +542,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -505,6 +553,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                  <View style={styles.row7}>
                     <Text style={styles.font}>الدُّنْيَا بِزِيْنَةِ ِۨالْكَوَاكِبِۙ ⚬ وَحِفْظًا مِّنْ كُلِّ</Text>
@@ -513,6 +562,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -522,6 +572,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -531,6 +582,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -540,13 +592,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١١</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</Text>
@@ -555,6 +608,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -564,6 +618,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -573,6 +628,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -582,6 +638,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -591,6 +648,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -600,6 +658,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -610,6 +669,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                  <View style={styles.row7}>
                     <Text style={styles.font}>الَّذِيْ يَصْلَى النَّارَ الْكُبْرٰىۚ ⚬ ثُمَّ لَا يَمُوْتُ فِيْهَا</Text>
@@ -618,6 +678,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -627,6 +688,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -636,6 +698,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -645,13 +708,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١١</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
-                
+
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <Text style={styles.font}> هُمْ فِيْهِ مُخْتَلِفُوْنَۗ ⚬ كَلَّا سَيَعْلَمُوْنَۙ ⚬ ثُمَّ</Text>
@@ -660,6 +724,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -669,6 +734,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -678,6 +744,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -687,6 +754,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -696,6 +764,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -705,6 +774,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -715,6 +785,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
                 <View style={styles.row}>
                  <View style={styles.row7}>
                     <Text style={styles.font}>حَبًّا وَنَبَاتًا ⚬ وَجَنَّاتٍ أَلْفَافًا ⚬ إِنَّ يَوْمَ الْفَصْلِ</Text>
@@ -723,6 +794,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -732,6 +804,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -741,6 +814,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -750,13 +824,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١١</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
             <View style={styles.column}>
-              
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -767,6 +842,7 @@ export default class LearnPage11 extends Component {
                   <Text style={styles.font2}>١</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -778,28 +854,31 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>وَالَّذِيْ قَدَّرَ فَهَدٰى⚬وَالَّذِيْٓ اَخْرَجَ الْمَرْعٰى⚬</Text>
-                    </View>      
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٣</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>فَجَعَلَهٗ غُثَاۤءً اَحْوٰى⚬سَنُقْرِئُكَ فَلَا تَنْسٰىٓ⚬</Text>
-                    </View>   
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٤</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -811,6 +890,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -823,6 +903,7 @@ export default class LearnPage11 extends Component {
                 </View>
               </View>
               
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -832,18 +913,20 @@ export default class LearnPage11 extends Component {
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٧</Text>
                 </View>
-              </View>
+              </View> 
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>الَّذِيْ يَصْلَى النَّارَ الْكُبْرٰى⚬ثُمَّ لَا يَمُوْتُ فِيْهَا</Text>
-                    </View>        
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٨</Text>
                 </View>
               </View>
               
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -854,6 +937,7 @@ export default class LearnPage11 extends Component {
                       <Text style={styles.font2}>٩</Text>
                   </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -863,6 +947,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -872,13 +957,14 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١١</Text>
                   </View>
                 </View>
+              
 
              </View>
             </View>
 
             <View style={{ flex: 1, width: screenWidth }}>
             <View style={styles.column}>
-              
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -889,6 +975,7 @@ export default class LearnPage11 extends Component {
                   <Text style={styles.font2}>١</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -900,28 +987,31 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٢</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>وَّالْجِبَالَ اَوْتَادًا⚬وَخَلَقْنٰكُمْ اَزْوَاجًا⚬</Text>
-                    </View>      
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٣</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا⚬وَجَعَلْنَا اللَّيْلَ</Text>
-                    </View>   
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٤</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -933,6 +1023,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٥</Text>
                 </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -945,6 +1036,7 @@ export default class LearnPage11 extends Component {
                 </View>
               </View>
               
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -955,17 +1047,20 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>٧</Text>
                 </View>
               </View>
+              
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
                       <Text style={styles.font}>حَبًّا وَّنَبَاتًا⚬وَجَنَّاتٍ أَلْفَافًا⚬إِنَّ يَوْمَ الْفَصْلِ</Text>
-                    </View>        
+                    </View>
                 </View>
                 <View style={styles.row1}>
                     <Text style={styles.font2}>٨</Text>
                 </View>
               </View>
               
+
               <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row2}>
@@ -976,6 +1071,7 @@ export default class LearnPage11 extends Component {
                       <Text style={styles.font2}>٩</Text>
                   </View>
               </View>
+              
 
               <View style={styles.row}>
                   <View style={styles.row7}>
@@ -985,6 +1081,7 @@ export default class LearnPage11 extends Component {
                     <Text style={styles.font2}>١٠</Text>
                   </View>
                 </View>
+                
 
                 <View style={styles.row}>
                   <View style={styles.row7}>
@@ -995,6 +1092,7 @@ export default class LearnPage11 extends Component {
                   </View>
                 </View>
                 
+
              </View>
             </View>
 
@@ -1046,7 +1144,7 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 28,
     color: '#000',
-    marginTop: 12,
+    alignSelf: 'center',
     fontFamily: 'arab-regular',
   },
   font2: {

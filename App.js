@@ -27,6 +27,16 @@ import LearnPage18 from './dirosa/pages/learn/LearnPage18';
 import LearnPage19 from './dirosa/pages/learn/LearnPage19';
 import LearnPage20 from './dirosa/pages/learn/LearnPage20';
 import LearnPage21 from './dirosa/pages/learn/LearnPage21';
+import LawPage1 from './dirosa/pages/law/LawPage1';
+import LawPage2 from './dirosa/pages/law/LawPage2';
+import LawPage3 from './dirosa/pages/law/LawPage3';
+import LawPage4 from './dirosa/pages/law/LawPage4';
+import LawPage5 from './dirosa/pages/law/LawPage5';
+import LawPage6 from './dirosa/pages/law/LawPage6';
+import LawPage7 from './dirosa/pages/law/LawPage7';
+import LawPage8 from './dirosa/pages/law/LawPage8';
+import LawPage9 from './dirosa/pages/law/LawPage9';
+import LawPage10 from './dirosa/pages/law/LawPage10';
 import AboutPage from './dirosa/pages/AboutPage';
 
 
@@ -57,6 +67,16 @@ const AppNavigator = createStackNavigator({
   Learn19: LearnPage19,
   Learn20: LearnPage20,
   Learn21: LearnPage21,
+  Law1: LawPage1,
+  Law2: LawPage2,
+  Law3: LawPage3,
+  Law4: LawPage4,
+  Law5: LawPage5,
+  Law6: LawPage6,
+  Law7: LawPage7,
+  Law8: LawPage8,
+  Law9: LawPage9,
+  Law10: LawPage10,
 },
 {
   initialRouteName: 'Home',

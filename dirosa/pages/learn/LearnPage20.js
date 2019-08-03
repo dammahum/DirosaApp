@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, TouchableWithoutFeedback } from 'react-native';
 import { Container, Header, Left, Body, Icon, Button, Title, } from 'native-base';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default class LearnPage20 extends Component {
+
   render() {
 
     let screenWidth = Dimensions.get('window').width;
@@ -37,6 +38,7 @@ export default class LearnPage20 extends Component {
             <View style={{ flex: 1, width: screenWidth }}>
                 <View style={styles.column}>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -52,7 +54,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>١</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -67,7 +71,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -80,7 +86,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٣</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -95,7 +103,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٤</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -110,7 +120,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -125,7 +137,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -140,7 +154,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٧</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -155,7 +171,9 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
+                <TouchableWithoutFeedback>
                 <View style={styles.row}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
@@ -170,6 +188,7 @@ export default class LearnPage20 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
               </View>
             </View>
@@ -227,7 +246,7 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 31,
     color: '#000',
-    marginTop: 12,
+    alignSelf: 'center',
     fontFamily: 'arab-regular',
   },
   font2: {

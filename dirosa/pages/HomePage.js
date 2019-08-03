@@ -6,24 +6,6 @@ import Menu, { MenuItem } from 'react-native-material-menu';
 
 
 export default class HomePage extends Component {
-  _menu = null;
- 
-  setMenuRef = ref => {
-    this._menu = ref;
-  };
- 
-  hideMenu = () => {
-    this._menu.hide();
-  };
- 
-  showMenu = () => {
-    this._menu.show();
-  };
-
-  About = () => {
-    this.hideMenu();
-    this.props.navigation.navigate('About');
-  };
 
   render() {
 
@@ -31,44 +13,24 @@ export default class HomePage extends Component {
     
     return (
       <Container>
-        <Header style={{ backgroundColor: '#1B5A07' }}>
-          <Left>
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Menu
-              ref={this.setMenuRef}
-              button={
-               <Icon style={styles.iconSettings} name='settings' onPress={this.showMenu}></Icon>
-              }
-            >
-              <MenuItem onPress={() => this.About()}>About</MenuItem>
-            </Menu>
-          </View>
-              
-          </Left>
-          <Body>
-            <Title style={styles.titleHeader}>DIROSA</Title>
-          </Body>
-          <Right />
-        </Header>
 
         <Content padder style={styles.mainBackground}>
-          
           <View style={styles.logoWrapper}>
             <Image source={require('../img/logo-dirosa.jpg')} style={styles.logoStyle}/>
           </View>
 
+          
           <TouchableOpacity
           style={styles.listIndex}
           onPress={() => navigate('Learn')}
           >
             <View style={styles.iconIndex}>
               <View style={styles.iconCircle}>
-                <Image source={require('../img/icon1.png')} style={styles.icon} />
+                <Image source={require('../img/icon1.png')} />
               </View>
             </View>
             <View style={styles.nameIndex}>
               <Text style={styles.titleIndex}>MULAI BELAJAR DIROSA</Text>
-              <Text style={styles.infoTitle}>Mulai Belajar Membaca Al-Qur'an</Text>
             </View>
           </TouchableOpacity>
 
@@ -78,12 +40,11 @@ export default class HomePage extends Component {
           >
             <View style={styles.iconIndex}>
               <View style={styles.iconCircle}>
-                <Image source={require('../img/icon2.png')} style={styles.icon} />
+                <Text style={{ fontSize: 36, color: '#fff' }}>۩</Text>
               </View>
             </View>
             <View style={styles.nameIndex}>
               <Text style={styles.titleIndex}>TANDA-TANDA WAQOF</Text>
-              <Text style={styles.infoTitle}>Tanda-Tanda Waqof Al-Qur'an</Text>
             </View>
           </TouchableOpacity>
 
@@ -93,12 +54,25 @@ export default class HomePage extends Component {
           >
             <View style={styles.iconIndex}>
               <View style={styles.iconCircle}>
-                <Image source={require('../img/icon3.png')} style={styles.icon} />
+                <Image source={require('../img/icon3.png')} />
               </View>
             </View>
             <View style={styles.nameIndex}>
               <Text style={styles.titleIndex}>HUKUM - HUKUM BACAAN</Text>
-              <Text style={styles.infoTitle}>Mengenal Hukum Bacaan Al-Qur'an</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+          style={styles.listIndex}
+          onPress={() => navigate('About')}
+          >
+            <View style={styles.iconIndex}>
+              <View style={styles.iconCircle}>
+              <Icon type='MaterialIcons' style={styles.iconSettings} name='info'></Icon>
+              </View>
+            </View>
+            <View style={styles.nameIndex}>
+              <Text style={styles.titleIndex}>TENTANG KAMI</Text>
             </View>
           </TouchableOpacity>
         </Content>
@@ -133,6 +107,7 @@ const styles = StyleSheet.create({
     elevation: 5,
     borderColor: '#ececec',
     marginVertical: 10,
+    paddingVertical: 10,
   },
   iconIndex: {
     flex: 1.2,
@@ -152,14 +127,9 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   titleIndex: {
-    fontSize: 20,
+    fontSize: 18,
     color: '#1B5A07',
-    fontFamily: 'Overpass-Bold',
-  },
-  infoTitle: {
-    fontFamily: 'Overpass-Regular',
-    color: '#1B5A07',
-    fontSize: 16,
+    fontFamily: 'Overpass-Black',
   },
   logoWrapper: {
     elevation: 10, 

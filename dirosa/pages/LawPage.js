@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, } from 'react-native';
-import { Container, Header, Body, Title, Left, Icon, Right, Button, Content, Accordion, View } from 'native-base';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Container, Header, Body, Title, View, Left, Icon, Right, Button, Content, } from 'native-base';
 
 import laws from '../lib/laws.json';
 
 export default class LawPage extends Component {
-  _renderHeader(item, expanded) {
-    return (
-      <View style={styles.Index}>
-
-        <Text style={styles.headIndex}>
-          { item.title }
-        </Text>
-        
-        {expanded 
-          ? <Icon style={styles.iconIndex} type='MaterialIcons' name='keyboard-arrow-up' />
-          : <Icon style={styles.iconIndex} type='MaterialIcons' name='keyboard-arrow-down' />
-        }
-
-      </View>
-    );
-  }
   render() {
 
-    const { goBack } = this.props.navigation;
+    const { goBack, navigate } = this.props.navigation;
 
     return (
         <Container>
@@ -42,17 +26,24 @@ export default class LawPage extends Component {
             <Right />
           </Header>
 
-        <Content style={styles.mainBackground}>
-          <View style={styles.wrapIndex}>
-            <Accordion
-              dataArray={laws}
-              animation={true}
-              expanded={true}
-              renderHeader={this._renderHeader}
-              contentStyle={styles.textIndex}
-              style={styles.accordionStyle}
-              />
-          </View>
+        <Content style={styles.wrapIndex}>
+          {laws.map((law) => (
+            <TouchableOpacity
+              key={law.id}
+              style={styles.Index}
+              onPress = {() => navigate('Law'+law.id)}
+            >
+              <View style={styles.main}>
+                <View>
+                  <Text style={styles.textIndex}>HUKUM - {law.id} </Text>
+                  <Text style={styles.textTitle}>{law.title}</Text>
+                </View>
+                <View style={styles.icon}>
+                  <Icon type='MaterialIcons' name='navigate-next' style={styles.iconNext}></Icon>
+                </View>
+              </View>
+            </TouchableOpacity>
+          ))}
         </Content>
       </Container>
     );
@@ -60,40 +51,46 @@ export default class LawPage extends Component {
 }
 
 const styles = StyleSheet.create ({
-    titleHeader: {
-      fontFamily: 'Overpass-Black',
-    },
-    wrapIndex: {
-      marginHorizontal: 15,
-      marginVertical: 20,
-    },
-    mainBackground: {
-      backgroundColor: '#76B800',
-    },
-    iconIndex: {
-      fontSize: 22,
-      color: '#1B5A07',
-    },
-    headIndex: {
-      color: '#1B5A07',
-      fontFamily: 'Overpass-Bold',
-      fontSize: 20,
-    },
-    Index: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      padding: 20, 
-      backgroundColor: '#fff',
-      borderRadius: 50,
-      elevation: 5,
-      marginVertical: 7,
-    },
-    textIndex: {
-      fontFamily: 'Overpass-Bold',
-      padding: 15,
-      fontSize: 16,
-      color: '#1B5A07',
-      backgroundColor: '#fff',
-      borderRadius: 30,
-    },
-  });
+  titleHeader: {
+    fontFamily: 'Overpass-Black',
+  },
+  wrapIndex: {
+    marginHorizontal: 10,
+    marginVertical: 10,
+    backgroundColor: '#ffffff',
+  },
+  main:{
+    flex: 1,
+    flexDirection: 'row',
+  },
+  Index: {
+    flexDirection: 'row',
+    paddingVertical: 12,
+    paddingHorizontal: 15,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    elevation: 3,
+    borderColor: '#1B5A07',
+    marginVertical: 7,
+  },
+  textIndex: {
+    fontFamily: 'Overpass-Black',
+    fontSize: 18,
+    color: '#1B5A07',
+    width: 280,
+  },
+  textTitle: {
+    fontFamily: 'Overpass-Bold',
+    color: '#1B5A07',
+    fontSize: 14,
+    width: 280,
+  },
+  icon: {
+    alignSelf: 'center',
+    marginLeft: 'auto',
+  },
+  iconNext: {
+    fontFamily: 'Overpass-Regular',
+    color: '#1B5A07',
+  }
+});

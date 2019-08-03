@@ -37,7 +37,7 @@ export default class AboutPage extends Component {
                 <Text style={[styles.paragraph, styles.text]}></Text>
 
                 <View style={styles.contact}>
-                  <Text style={[styles.contactHeader, styles.text]}>Developers</Text>
+                  <Text style={[styles.contactHeader, styles.text]}>Developer</Text>
                   <View style={styles.contactItem}>
                     <Icon type='MaterialIcons' name="navigate-next"  style={[styles.contactIcon, styles.text]}/>
                     <Text style={[styles.contactText, styles.text]}>Muhammad Bin Sirajuddin</Text>
@@ -56,7 +56,7 @@ export default class AboutPage extends Component {
                   </View>
                   <View style={styles.contactItem}>
                     <Icon type='MaterialIcons' name="phone-iphone" style={[styles.contactIcon, styles.text]}/>
-                    <Text style={[styles.contactText, styles.text]}>0857 2524 9265 / 0822 5718 2656 (Irhamullah)</Text>
+                    <Text style={[styles.contactText, styles.text]}>0857 2524 9265 (Irhamullah)</Text>
                   </View>
                   <View style={styles.contactItem}>
                     <Icon type='MaterialIcons' name="home" style={[styles.contactIcon, styles.text]}/>

@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, TouchableWithoutFeedback } from 'react-native';
 import { Container, Header, Left, Body, Icon, Button, Title, } from 'native-base';
 import { ScrollView } from 'react-native-gesture-handler';
 
+import Sound from 'react-native-sound';
+
 export default class LearnPage3 extends Component {
+
+  state = {
+    play:false,
+    audio:null
+  };
+
+  playSound(name) {
+
+    if(this.state.audio != null) {
+      this.state.audio.stop()
+      this.state.audio.reset()
+    }
+
+    let audio = new Sound(name+'.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        alert('failed to load the sound', error);
+        return;
+      }
+
+      this.setState({
+        play:name,
+        audio:audio
+      })
+
+      this.state.audio.play((success) => {
+        this.state.audio.stop()
+        this.setState({play:false})
+      });
+
+    });
+  }
+
   render() {
 
     let screenWidth = Dimensions.get('window').width;
@@ -34,25 +68,28 @@ export default class LearnPage3 extends Component {
           pagingEnabled = {true}
           >
 
-            <View style={{ flex: 1, width: screenWidth  }}>
-              <View style={styles.column}>
+              <View style={{ flex: 1, width: screenWidth  }}>
+                <View style={styles.column}>
 
-                <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <Text style={styles.font}>كَ</Text>
-                    <Text style={styles.font}>قَ</Text>
-                    <Text style={styles.font}>فَ</Text>
-                    <Text style={styles.font}>غَ</Text>
-                    <Text style={styles.font}>عَ</Text>
-                    <Text style={styles.font}>ظَ</Text>
-                    <Text style={styles.font}>طَ</Text>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h19b1')}>
+                  <View style={[styles.row, {backgroundColor: this.state.play == 'h19b1' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <Text style={styles.font}>كَ</Text>
+                      <Text style={styles.font}>قَ</Text>
+                      <Text style={styles.font}>فَ</Text>
+                      <Text style={styles.font}>غَ</Text>
+                      <Text style={styles.font}>عَ</Text>
+                      <Text style={styles.font}>ظَ</Text>
+                      <Text style={styles.font}>طَ</Text>
+                    </View>
+                    <View style={styles.row1}>
+                      <Text style={styles.font2}>١</Text>
+                    </View>
                   </View>
-                  <View style={styles.row1}>
-                    <Text style={styles.font2}>١</Text>
-                  </View>
-                </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h19b2')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b2' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <Text style={styles.font}>فَ</Text>
@@ -72,17 +109,85 @@ export default class LearnPage3 extends Component {
                     <Text style={styles.font2}>٢</Text>
                   </View>
                 </View>
+                </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+                <TouchableWithoutFeedback onPress={() => this.playSound('h19b3')}>
+                  <View style={[styles.row, {backgroundColor: this.state.play == 'h19b3' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row4}>
+                        <View style={styles.row2}>
+                          <Text style={styles.font}>قَ</Text>
+                          <Text style={styles.font}>طَ</Text>
+                        </View>
+                        <View style={styles.separator}></View>
+                        <View style={styles.row2}>
+                          <Text style={styles.font}>فَ</Text>
+                          <Text style={styles.font}>كَ</Text>
+                        </View>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row4}>
+                        <View style={styles.row2}>
+                          <Text style={styles.font}>طَ</Text>
+                          <Text style={styles.font}>ظَ</Text>
+                        </View>
+                        <View style={styles.separator}></View>
+                        <View style={styles.row2}>
+                          <Text style={styles.font}>عَ</Text>
+                          <Text style={styles.font}>غَ</Text>
+                        </View>
+                      </View>
+                    </View>
+                    <View style={styles.row1}>
+                      <Text style={styles.font2}>٣</Text>
+                    </View>
+                  </View>
+                </TouchableWithoutFeedback>
+
+                <TouchableWithoutFeedback onPress={() => this.playSound('h19b4')}>
+                  <View style={[styles.row, {backgroundColor: this.state.play == 'h19b4' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <View style={styles.row4}>
                       <View style={styles.row2}>
+                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>عَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>كَ</Text>
                         <Text style={styles.font}>قَ</Text>
+                      </View>
+                    </View>
+                    <View style={styles.separator}></View>
+                    <View style={styles.row4}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>ظَ</Text>
                         <Text style={styles.font}>طَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row2}>
-                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>غَ</Text>
+                        <Text style={styles.font}>عَ</Text>
+                      </View>
+                    </View>
+                  </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>٤</Text>
+                  </View>
+                </View>
+                </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h19b5')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b5' ? '#76B800' : '#fff'}]}>
+                  <View style={styles.row7}>
+                    <View style={styles.row4}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>بَ</Text>
+                        <Text style={styles.font}>طَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>تَ</Text>
                         <Text style={styles.font}>كَ</Text>
                       </View>
                     </View>
@@ -90,129 +195,73 @@ export default class LearnPage3 extends Component {
                     <View style={styles.row4}>
                       <View style={styles.row2}>
                         <Text style={styles.font}>طَ</Text>
-                        <Text style={styles.font}>ظَ</Text>
+                        <Text style={styles.font}>تَ</Text>
                       </View>
                       <View style={styles.separator}></View>
                       <View style={styles.row2}>
-                        <Text style={styles.font}>عَ</Text>
                         <Text style={styles.font}>غَ</Text>
+                        <Text style={styles.font}>بَ</Text>
                       </View>
                     </View>
                   </View>
                   <View style={styles.row1}>
-                    <Text style={styles.font2}>٣</Text>
+                    <Text style={styles.font2}>٥</Text>
                   </View>
                 </View>
+              </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
-                <View style={styles.row7}>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>فَ</Text>
-                      <Text style={styles.font}>عَ</Text>
+              <TouchableWithoutFeedback onPress={() => this.playSound('h19b6')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b6' ? '#76B800' : '#fff'}]}>
+                  <View style={styles.row7}>
+                    <View style={styles.row4}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>ثَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>دَ</Text>
+                        <Text style={styles.font}>زَ</Text>
+                      </View>
                     </View>
                     <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>كَ</Text>
-                      <Text style={styles.font}>قَ</Text>
+                    <View style={styles.row4}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>حَ</Text>
+                        <Text style={styles.font}>ظَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>طَ</Text>
+                        <Text style={styles.font}>أَ</Text>
+                      </View>
                     </View>
                   </View>
-                  <View style={styles.separator}></View>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>ظَ</Text>
-                      <Text style={styles.font}>طَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>غَ</Text>
-                      <Text style={styles.font}>عَ</Text>
-                    </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>٦</Text>
                   </View>
                 </View>
-                <View style={styles.row1}>
-                  <Text style={styles.font2}>٤</Text>
-                </View>
-              </View>
+              </TouchableWithoutFeedback>
 
-              <View style={styles.row}>
-                <View style={styles.row7}>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>بَ</Text>
-                      <Text style={styles.font}>طَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>تَ</Text>
-                      <Text style={styles.font}>كَ</Text>
-                    </View>
+              <TouchableWithoutFeedback onPress={() => this.playSound('h19b7')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b7' ? '#76B800' : '#fff'}]}>
+                  <View style={styles.row7}>
+                    <Text style={styles.font}>خَ</Text>
+                    <Text style={styles.font}>حَ</Text>
+                    <Text style={styles.font}>جَ</Text>
+                    <Text style={styles.font}>ثَ</Text>
+                    <Text style={styles.font}>تَ</Text>
+                    <Text style={styles.font}>بَ</Text>
+                    <Text style={styles.font}>أَ</Text>
                   </View>
-                  <View style={styles.separator}></View>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>طَ</Text>
-                      <Text style={styles.font}>تَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>غَ</Text>
-                      <Text style={styles.font}>بَ</Text>
-                    </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>٧</Text>
                   </View>
                 </View>
-                <View style={styles.row1}>
-                  <Text style={styles.font2}>٥</Text>
-                </View>
-              </View>
+              </TouchableWithoutFeedback>
 
-              <View style={styles.row}>
-                <View style={styles.row7}>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>ثَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>دَ</Text>
-                      <Text style={styles.font}>زَ</Text>
-                    </View>
-                  </View>
-                  <View style={styles.separator}></View>
-                  <View style={styles.row4}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>حَ</Text>
-                      <Text style={styles.font}>ظَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>طَ</Text>
-                      <Text style={styles.font}>أَ</Text>
-                    </View>
-                  </View>
-                </View>
-                <View style={styles.row1}>
-                  <Text style={styles.font2}>٦</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
-                <View style={styles.row7}>
-                  <Text style={styles.font}>خَ</Text>
-                  <Text style={styles.font}>حَ</Text>
-                  <Text style={styles.font}>جَ</Text>
-                  <Text style={styles.font}>ثَ</Text>
-                  <Text style={styles.font}>تَ</Text>
-                  <Text style={styles.font}>بَ</Text>
-                  <Text style={styles.font}>أَ</Text>
-                </View>
-                <View style={styles.row1}>
-                  <Text style={styles.font2}>٧</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
+              <TouchableWithoutFeedback onPress={() => this.playSound('h19b8')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b8' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>ضَ</Text>
                     <Text style={styles.font}>صَ</Text>
@@ -227,8 +276,10 @@ export default class LearnPage3 extends Component {
                     <Text style={styles.font2}>٨</Text>
                   </View>
                 </View>
+              </TouchableWithoutFeedback>
 
-                <View style={styles.row}>
+              <TouchableWithoutFeedback onPress={() => this.playSound('h19b9')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h19b9' ? '#76B800' : '#fff'}]}>
                   <View style={styles.row7}>
                     <Text style={styles.font}>كَ</Text>
                     <Text style={styles.font}>قَ</Text>
@@ -242,6 +293,7 @@ export default class LearnPage3 extends Component {
                     <Text style={styles.font2}>٩</Text>
                   </View>
                 </View>
+              </TouchableWithoutFeedback>
 
                 {/* /.End of Page */}
 
@@ -251,252 +303,271 @@ export default class LearnPage3 extends Component {
 
             <View style={{ flex: 1, width: screenWidth }}>
             <View style={styles.column}>
-              
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>قَ</Text>
-                      <Text style={styles.font}>زَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>قَ</Text>
-                      <Text style={styles.font}>زَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>فَكَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>كَ</Text>
-                      <Text style={styles.font}>فَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                  <Text style={styles.font2}>١</Text>
-                </View>
-              </View>
 
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>بَدَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>دَ</Text>
-                      <Text style={styles.font}>بَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>كَفَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>فَ</Text>
-                      <Text style={styles.font}>كَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٢</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>غَفَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>فَ</Text>
-                      <Text style={styles.font}>غَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>حَفَظَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>حَ</Text>
-                      <Text style={styles.font}>فَ</Text>
-                      <Text style={styles.font}>ظَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٣</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>ضَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>أَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>ضَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>أَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>سَكَتَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={[styles.font, {fontSize: 33} ]}>تَ</Text>
-                      <Text style={[styles.font, {fontSize: 33} ]}>كَ</Text>
-                      <Text style={[styles.font, {fontSize: 33} ]}>سَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٤</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>جَرَبَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>بَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>جَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>شَرَبَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>بَ</Text>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>شَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٥</Text>
-                </View>
-              </View>
-
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>خَسَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>سَ</Text>
-                      <Text style={styles.font}>خَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>صَبَحَ</Text>                      
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>حَ</Text>
-                      <Text style={styles.font}>بَ</Text>
-                      <Text style={styles.font}>صَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٦</Text>
-                </View>
-              </View>
-              
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>شَتَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>تَ</Text>
-                      <Text style={styles.font}>شَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>صَدَقَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>قَ</Text>
-                      <Text style={styles.font}>دَ</Text>
-                      <Text style={styles.font}>صَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٧</Text>
-                </View>
-              </View>
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>فَكَشَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>شَ</Text>
-                      <Text style={styles.font}>كَ</Text>
-                      <Text style={styles.font}>فَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>ذَكَرَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>رَ</Text>
-                      <Text style={styles.font}>كَ</Text>
-                      <Text style={styles.font}>ذَ</Text>
-                    </View>          
-                </View>
-                <View style={styles.row1}>
-                    <Text style={styles.font2}>٨</Text>
-                </View>
-              </View>
-              
-              <View style={styles.row}>
-                  <View style={styles.row7}>
-                    <View style={styles.row2}>
-                      <Text style={[styles.font, {fontSize: 32} ]}>خَطَبَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>بَ</Text>
-                      <Text style={styles.font}>طَ</Text>
-                      <Text style={styles.font}>خَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>عَقَفَ</Text>
-                    </View>
-                    <View style={styles.separator}></View>
-                    <View style={styles.row2}>
-                      <Text style={styles.font}>فَ</Text>
-                      <Text style={styles.font}>قَ</Text>
-                      <Text style={styles.font}>عَ</Text>
-                    </View>          
-                    </View>
-                    <View style={styles.row1}>
-                        <Text style={styles.font2}>٩</Text>
-                    </View>
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b1')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b1' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>قَ</Text>
+                        <Text style={styles.font}>زَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>قَ</Text>
+                        <Text style={styles.font}>زَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>فَكَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>كَ</Text>
+                        <Text style={styles.font}>فَ</Text>
+                      </View>
                   </View>
+                  <View style={styles.row1}>
+                    <Text style={styles.font2}>١</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b2')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b2' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>بَدَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>دَ</Text>
+                        <Text style={styles.font}>بَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>كَفَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>كَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٢</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b3')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b3' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>غَفَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>غَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>حَفَظَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>ظَ</Text>
+                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>حَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٣</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b4')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b4' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>ضَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>أَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>ضَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>أَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>سَكَتَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={[styles.font, {fontSize: 33} ]}>تَ</Text>
+                        <Text style={[styles.font, {fontSize: 33} ]}>كَ</Text>
+                        <Text style={[styles.font, {fontSize: 33} ]}>سَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٤</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b5')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b5' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>جَرَبَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>بَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>جَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>شَرَبَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>بَ</Text>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>شَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٥</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b6')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b6' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>خَسَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>سَ</Text>
+                        <Text style={styles.font}>خَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>صَبَحَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>حَ</Text>
+                        <Text style={styles.font}>بَ</Text>
+                        <Text style={styles.font}>صَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٦</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b7')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b7' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>شَتَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>تَ</Text>
+                        <Text style={styles.font}>شَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>صَدَقَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>قَ</Text>
+                        <Text style={styles.font}>دَ</Text>
+                        <Text style={styles.font}>صَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٧</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b8')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b8' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>فَكَشَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>شَ</Text>
+                        <Text style={styles.font}>كَ</Text>
+                        <Text style={styles.font}>فَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>ذَكَرَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>رَ</Text>
+                        <Text style={styles.font}>كَ</Text>
+                        <Text style={styles.font}>ذَ</Text>
+                      </View>
+                  </View>
+                  <View style={styles.row1}>
+                      <Text style={styles.font2}>٨</Text>
+                  </View>
+                </View>
+              </TouchableWithoutFeedback>
+
+              <TouchableWithoutFeedback onPress={() => this.playSound('h20b9')}>
+                <View style={[styles.row, {backgroundColor: this.state.play == 'h20b9' ? '#76B800' : '#fff'}]}>
+                    <View style={styles.row7}>
+                      <View style={styles.row2}>
+                        <Text style={[styles.font, {fontSize: 32} ]}>خَطَبَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>بَ</Text>
+                        <Text style={styles.font}>طَ</Text>
+                        <Text style={styles.font}>خَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>عَقَفَ</Text>
+                      </View>
+                      <View style={styles.separator}></View>
+                      <View style={styles.row2}>
+                        <Text style={styles.font}>فَ</Text>
+                        <Text style={styles.font}>قَ</Text>
+                        <Text style={styles.font}>عَ</Text>
+                      </View>
+                      </View>
+                      <View style={styles.row1}>
+                          <Text style={styles.font2}>٩</Text>
+                      </View>
+                    </View>
+                </TouchableWithoutFeedback>
 
                 </View>
               </View>
@@ -549,7 +620,7 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 39,
     color: '#000',
-    marginTop: 7,
+    alignSelf: 'center',
     fontFamily: 'arab-regular',
   },
   font2: {
